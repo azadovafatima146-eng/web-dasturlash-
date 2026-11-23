@@ -1,0 +1,28 @@
+:root { --fon:#f6f7fb; --matn:#1d1f27; --karta:#fff; --asosiy:#2f6fed; --chiziq:#dde1ea; }
+body.tun { --fon:#14161c; --matn:#e8eaf0; --karta:#1f232d; --chiziq:#323846; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, sans-serif; background:var(--fon); color:var(--matn); }
+.sarlavha { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.5rem; padding:1rem 1.5rem; background:var(--karta); border-bottom:1px solid var(--chiziq); }
+.sarlavha nav { display:flex; gap:1rem; align-items:center; }
+a { color:var(--asosiy); text-decoration:none; }
+.logo { font-weight:700; font-size:1.3rem; }
+main { max-width:1100px; margin:0 auto; padding:1.5rem; }
+button, .havola-tugma { background:var(--asosiy); color:#fff; border:0; padding:.55rem 1rem; border-radius:6px; cursor:pointer; font-size:1rem; }
+.qahramon { text-align:center; padding:4rem 1rem; }
+.statistika { display:flex; flex-wrap:wrap; gap:1rem; margin-bottom:1rem; }
+.statistika div { background:var(--karta); border:1px solid var(--chiziq); padding:.7rem 1rem; border-radius:8px; }
+.boshqaruv { display:flex; flex-wrap:wrap; gap:.7rem; margin-bottom:1rem; }
+input, select, textarea { padding:.55rem; border:1px solid var(--chiziq); border-radius:6px; background:var(--karta); color:var(--matn); font-size:1rem; }
+.tor { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:1rem; }
+.karta { background:var(--karta); border:1px solid var(--chiziq); border-radius:10px; padding:1rem; }
+.karta img { width:100%; height:150px; object-fit:cover; border-radius:6px; }
+.kat { color:#8a90a0; margin:.2rem 0; }
+.narx { font-weight:700; }
+.modal { position:fixed; inset:0; background:rgba(0,0,0,.6); display:flex; align-items:center; justify-content:center; padding:1rem; }
+.modal[hidden] { display:none; }
+.modal-oyna { background:var(--karta); padding:1.5rem; border-radius:10px; max-width:420px; position:relative; }
+#modal-yopish { position:absolute; top:.5rem; right:.5rem; padding:.2rem .7rem; }
+form { display:flex; flex-direction:column; max-width:460px; gap:.3rem; }
+form label { display:flex; flex-direction:column; gap:.25rem; margin-top:.6rem; }
+.xato { color:#d33; min-height:1em; }
+.ok { color:#1a8f4a; font-weight:600; }

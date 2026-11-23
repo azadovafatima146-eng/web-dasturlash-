@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uz"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Katalog — TexnoDokon</title><link rel="stylesheet" href="css/style.css"></head>
+<body><header class="sarlavha"><a class="logo" href="index.html">TexnoDokon</a><nav><a href="index.html">Bosh sahifa</a><a href="katalog.html">Katalog</a><a href="aloqa.html">Aloqa</a><button id="tema" type="button">Tun / Kun</button></nav></header>
+<main>
+<h1>Katalog</h1>
+<section class="statistika">
+<div>Jami: <b id="st-jami"></b></div>
+<div>O'rtacha narx: <b id="st-ortacha"></b></div>
+<div>Eng qimmat: <b id="st-qimmat"></b></div>
+</section>
+<section class="boshqaruv">
+<input id="qidiruv" type="search" placeholder="Nom bo'yicha qidirish...">
+<select id="kategoriya"><option value="hammasi">Barcha kategoriyalar</option></select>
+<select id="saralash">
+<option value="">Saralashsiz</option>
+<option value="narx-osish">Narx: arzondan qimmatga</option>
+<option value="narx-kamayish">Narx: qimmatdan arzonga</option>
+<option value="nom">Nom: A-Z</option>
+</select>
+</section>
+<p>Ko'rsatilmoqda: <b id="soni">0</b> ta</p>
+<p id="bosh-xabar" hidden>Hech narsa topilmadi</p>
+<div id="konteyner" class="tor"></div>
+</main>
+<div id="modal" class="modal" hidden>
+<div class="modal-oyna"><button id="modal-yopish" type="button">×</button>
+<h2 id="modal-nomi"></h2><p id="modal-malumot"></p></div></div>
+<script src="js/data.js"></script><script src="js/katalog.js"></script><script src="js/ui.js"></script>
+</body></html>
